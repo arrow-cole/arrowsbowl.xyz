@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sitemap | Arrows Bowl</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a1d29;
+      color: #ffffff;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #66fcf1;
+      margin-bottom: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 15px 0;
+    }
+
+    a {
+      color: #66fcf1;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #45a29e;
+      text-decoration: underline;
+    }
+
+    .sub-links {
+      padding-left: 20px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .social-links a {
+      font-size: 1.8em;
+      margin: 0 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #66fcf1;
+    }
+
+    .external-links {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .external-links a {
+      font-size: 1.1em;
+      color: #c5c6c7;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 2px solid #66fcf1;
+      border-radius: 5px;
+      margin: 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .external-links a:hover {
+      background-color: #66fcf1;
+      color: #0b0c10;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #1f2833;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      color: #c5c6c7;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #0b0c10;
+      color: #66fcf1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .navbar {
+      background-color: #1f2833;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #66fcf1;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: #c5c6c7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #66fcf1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a class="logo" href="./">ArrowsBowl</a>
+    <div class="nav-links">
+      <a href="./">Home</a>
+      <a href="videos">Videos</a>
+      <a href="about">About</a>
+      <a href="contact">Contact</a>
+      <div class="dropdown">
+        <a href="sitemap">More ▾</a>
+        <div class="dropdown-content">
+          <a href="https://balls.arrowsbowl.xyz/">Balls</a>
+          <a href="https://scores.arrowsbowl.xyz/">Scores</a>
+          <a href="https://bio.arrowsbowl.xyz">Bio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Sitemap for Arrows Bowl</h1>
+
+  <!-- Social Links Section -->
+  <div class="social-links">
+    <a href="https://www.youtube.com/@teamarrowsbowl" target="_blank" title="YouTube">
+      <img src="https://img.icons8.com/ios/452/youtube.png" alt="YouTube" width="40"/>
+    </a>
+    <a href="https://www.instagram.com/acole_bowl" target="_blank" title="Instagram">
+      <img src="https://img.icons8.com/ios/452/instagram-new.png" alt="Instagram" width="40"/>
+    </a>
+    <a href="https://www.tiktok.com/@arrow_cole" target="_blank" title="TikTok">
+      <img src="https://img.icons8.com/ios/452/tiktok.png" alt="TikTok" width="40"/>
+    </a>
+  </div>
+
+  <!-- Internal Website Section-->
+  <div class="external-links">
+    <p><strong>Links:</strong></p>
+    <a href="./">Home</a>
+    <a href="videos">Videos</a>
+    <a href="about">About</a>
+    <a href="contact">Contact</a>
+
+  </div>
+  <!-- External Websites Section -->
+  <div class="external-links">
+    <p><strong>External Links:</strong></p>
+    <a href="https://balls.arrowsbowl.xyz" target="_blank">Bowling Balls</a>
+    <a href="https://scores.arrowsbowl.xyz" target="_blank">Tournament Scores</a>
+    <a href="https://bio.arrowsbowl.xyz" target="_blank">Bio</a>
+    <a href="https://www.jayjay-adventures.net" target="_blank">JJ's Website</a>
+    <a href="https://aaroncole.dev" target="_blank">Pesonal Website</a>
+  </div>
+
+</body>
+</html>

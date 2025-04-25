@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Videos | Arrows Bowl</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b0c10;
+      color: #ffffff;
+    }
+
+    .navbar {
+      background-color: #1f2833;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #66fcf1;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: #c5c6c7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #66fcf1;
+    }
+
+    .header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .header h1 {
+      font-size: 3em;
+      color: #66fcf1;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      color: #c5c6c7;
+      font-size: 1.2em;
+    }
+
+    .featured-video {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .featured-video iframe {
+      width: 90%;
+      max-width: 800px;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .video-grid iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #1f2833;
+      color: #c5c6c7;
+      font-size: 0.9em;
+    }
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #1f2833;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      color: #c5c6c7;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #0b0c10;
+      color: #66fcf1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a class="logo" href="./">ArrowsBowl</a>
+    <div class="nav-links">
+      <a href="./">Home</a>
+      <a href="videos">Videos</a>
+      <a href="about">About</a>
+      <a href="contact">Contact</a>
+      <div class="dropdown">
+        <a href="sitemap">More ▾</a>
+        <div class="dropdown-content">
+          <a href="https://balls.arrowsbowl.xyz/">Balls</a>
+          <a href="https://scores.arrowsbowl.xyz/">Scores</a>
+          <a href="https://bio.arrowsbowl.xyz">Bio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>🎳 Latest Bowling Vibes</h1>
+    <p>Trick shots, gear reviews, behind-the-scenes from the lanes – all in one place.</p>
+  </div>
+
+  <!-- Featured Video -->
+  <div class="featured-video">
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  </div>
+
+  <!-- More Videos Grid -->
+  <div class="video-grid">
+    <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/V-_O7nl0Ii0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" allowfullscreen></iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Arrowsbowl! 🎳
+  </footer>
+
+</body>
+</html>

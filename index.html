@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arrows Bowl</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b0c10;
+      color: #ffffff;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #1f2833;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #66fcf1;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #c5c6c7;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #66fcf1;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #1f2833;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      color: #c5c6c7;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #0b0c10;
+      color: #66fcf1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: linear-gradient(to right, #0b0c10, #1f2833);
+    }
+
+    .hero h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+      color: #66fcf1;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      color: #c5c6c7;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .hero-buttons {
+      margin-top: 40px;
+    }
+
+    .hero-buttons a {
+      background-color: #45a29e;
+      color: #0b0c10;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .hero-buttons a:hover {
+      background-color: #66fcf1;
+    }
+
+    .content-section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .content-section h2 {
+      font-size: 2.5em;
+      color: #66fcf1;
+      margin-bottom: 20px;
+    }
+
+    .content-section p {
+      font-size: 1.1em;
+      color: #c5c6c7;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .social-links {
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      color: #66fcf1;
+      font-size: 1.5em;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #1f2833;
+      color: #c5c6c7;
+      font-size: 0.9em;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a class="logo" href="./">ArrowsBowl</a>
+    <div class="nav-links">
+      <a href="./">Home</a>
+      <a href="videos">Videos</a>
+      <a href="about">About</a>
+      <a href="contact">Contact</a>
+      <div class="dropdown">
+        <a href="sitemap">More ▾</a>
+        <div class="dropdown-content">
+          <a href="https://balls.arrowsbowl.xyz/">Balls</a>
+          <a href="https://scores.arrowsbowl.xyz/">Scores</a>
+          <a href="https://bio.arrowsbowl.xyz">Bio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Bowling. Vibes. Repeat.</h1>
+    <p>Welcome to the official home of Strike With Sam — pro bowler, content creator, and your go-to for all things lanes, laughs, and lifestyle.</p>
+    <div class="hero-buttons">
+      <a href="#videos">Watch Latest</a>
+      <a href="#merch">Shop Merch</a>
+    </div>
+  </div>
+
+  <!-- Videos Section -->
+  <div class="content-section" id="videos">
+    <h2>🔥 Latest Videos</h2>
+    <p>Tips, trick shots, gear reviews & behind-the-scenes lane life. Hit that sub button and roll with the crew.</p>
+    <div class="social-links">
+      <a href="#">YouTube</a>
+      <a href="#">TikTok</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="content-section" id="about">
+    <h2>🎳 Meet Sam</h2>
+    <p>From junior leagues to viral videos, I’ve been throwing strikes since I could lift a ball. Let’s build the biggest bowling fam online.</p>
+  </div>
+
+  <!-- Merch Section -->
+  <div class="content-section" id="merch">
+    <h2>🧢 Official Merch</h2>
+    <p>Rep the lane life with tees, hoodies, and exclusive drops — made for bowlers, by a bowler.</p>
+    <a class="hero-buttons" href="#">Shop Now</a>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    © 2025 Arrows Bowl — All rights reserved. | Business Inquiries: sam@strikesquad.com
+  </footer>
+
+</body>
+</html>
