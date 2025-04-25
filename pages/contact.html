@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About | Arrows Bowl</title>
+  <title>Contact | ArrowsBowl</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
+  <link rel="icon" href="https://aaroncole.dev/dist/img/favicon.png" type="image/x-icon"> <!-- Favicon Link -->
+ <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -57,19 +58,17 @@
       left: 0;
       background-color: #1f2833;
       min-width: 160px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
       z-index: 1000;
       border-radius: 4px;
     }
 
     .dropdown-content a {
+      color: #c5c6c7;
       padding: 12px 16px;
+      text-decoration: none;
       display: block;
       text-align: left;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
     }
 
     .dropdown-content a:hover {
@@ -77,23 +76,32 @@
       color: #66fcf1;
     }
 
-    .content {
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .contact-section {
       padding: 60px 20px;
-      max-width: 900px;
+      max-width: 800px;
       margin: auto;
       text-align: center;
     }
 
-    .content h1 {
+    .contact-section h1 {
       font-size: 3em;
       color: #66fcf1;
       margin-bottom: 20px;
     }
 
-    .content p {
+    .contact-section p {
       font-size: 1.2em;
       color: #c5c6c7;
       line-height: 1.6;
+    }
+
+    .contact-section a {
+      color: #66fcf1;
+      text-decoration: underline;
     }
 
     footer {
@@ -117,39 +125,41 @@
 
   <!-- Navbar -->
   <div class="navbar">
-    <a class="logo" href="./">ArrowsBowl</a>
+    <a class="logo" href="../">ArrowsBowl</a>
     <div class="nav-links">
-      <a href="./">Home</a>
+      <a href="../">Home</a>
       <a href="videos">Videos</a>
       <a href="about">About</a>
       <a href="contact">Contact</a>
       <div class="dropdown">
         <a href="sitemap">More ▾</a>
         <div class="dropdown-content">
-          <a href="https://balls.arrowsbowl.xyz/">Balls</a>
-          <a href="https://scores.arrowsbowl.xyz/">Scores</a>
-          <a href="https://bio.arrowsbowl.xyz">Bio</a>
+          <a href="https://balls.arrowsbowl.xyz/" target="_blank">Balls</a>
+          <a href="https://scores.arrowsbowl.xyz/" target="_blank">Scores</a>
+          <a href="https://bio.arrowsbowl.xyz" target="_blank">Bio</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- About Content -->
-  <div class="content">
-    <h1>🎳 About Arrows Bowl</h1>
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <h1>📩 Get in Touch</h1>
     <p>
-      Arrows Bowl is more than just a name — it’s a mindset. Built for the bowlers who aim with intention and strike with purpose, we’re a content collective driven by passion, precision, and a love for the sport.
+      Got a brand deal, event invite, or just want to say hey? I’m all ears (and eyes).
     </p>
     <p>
-      From breakdowns of pro techniques to trick shots, challenges, and league life content, our goal is to make bowling feel fresh, fun, and full of energy. Whether you're just starting out or chasing your next 300 game, you're part of the crew here.
+      💼 For business inquiries:<br>
+      <a href="mailto:Acole@tech-center.com">Acole@tech-center.com</a>
     </p>
     <p>
-      We're here to inspire, entertain, and help you fall in love with bowling all over again. Welcome to the lane.
+      📬 Or DM me on Instagram:<br>
+      <a href="https://www.instagram.com/acole_bowl/" target="_blank">@Acole_Bowl</a>
     </p>
   </div>
 
   <footer>
-    © 2025 Arrows Bowl — Aim true. Roll deep. 🎯
+    © 2025 Arrows Bowl — Slide into the DMs.
   </footer>
 
 </body>

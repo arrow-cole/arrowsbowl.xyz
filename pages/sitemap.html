@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sitemap | Arrows Bowl</title>
+  <link rel="icon" href="https://aaroncole.dev/dist/img/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Poppins Font -->
   <style>
     body {
       margin: 0;
@@ -51,17 +53,17 @@
       display: flex;
       justify-content: center;
       margin-top: 40px;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
-    .social-links a {
-      font-size: 1.8em;
-      margin: 0 20px;
+    .social-links a img {
+      width: 40px;
       transition: transform 0.3s ease;
     }
 
-    .social-links a:hover {
+    .social-links a:hover img {
       transform: scale(1.2);
-      color: #66fcf1;
     }
 
     .external-links {
@@ -77,6 +79,7 @@
       border: 2px solid #66fcf1;
       border-radius: 5px;
       margin: 10px;
+      display: inline-block;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
@@ -124,6 +127,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .logo {
@@ -136,6 +140,7 @@
     .nav-links {
       display: flex;
       gap: 30px;
+      flex-wrap: wrap;
     }
 
     .nav-links a {
@@ -153,18 +158,18 @@
 
   <!-- Navbar -->
   <div class="navbar">
-    <a class="logo" href="./">ArrowsBowl</a>
+    <a class="logo" href="../">ArrowsBowl</a>
     <div class="nav-links">
-      <a href="./">Home</a>
+      <a href="../">Home</a>
       <a href="videos">Videos</a>
       <a href="about">About</a>
       <a href="contact">Contact</a>
       <div class="dropdown">
         <a href="sitemap">More ▾</a>
         <div class="dropdown-content">
-          <a href="https://balls.arrowsbowl.xyz/">Balls</a>
-          <a href="https://scores.arrowsbowl.xyz/">Scores</a>
-          <a href="https://bio.arrowsbowl.xyz">Bio</a>
+          <a href="https://balls.arrowsbowl.xyz/" target="_blank">Balls</a>
+          <a href="https://scores.arrowsbowl.xyz/" target="_blank">Scores</a>
+          <a href="https://bio.arrowsbowl.xyz" target="_blank">Bio</a>
         </div>
       </div>
     </div>
@@ -175,25 +180,34 @@
   <!-- Social Links Section -->
   <div class="social-links">
     <a href="https://www.youtube.com/@teamarrowsbowl" target="_blank" title="YouTube">
-      <img src="https://img.icons8.com/ios/452/youtube.png" alt="YouTube" width="40"/>
+      <img src="https://img.icons8.com/ios/452/youtube.png" alt="YouTube Logo"/>
     </a>
     <a href="https://www.instagram.com/acole_bowl" target="_blank" title="Instagram">
-      <img src="https://img.icons8.com/ios/452/instagram-new.png" alt="Instagram" width="40"/>
+      <img src="https://img.icons8.com/ios/452/instagram-new.png" alt="Instagram Logo"/>
     </a>
     <a href="https://www.tiktok.com/@arrow_cole" target="_blank" title="TikTok">
-      <img src="https://img.icons8.com/ios/452/tiktok.png" alt="TikTok" width="40"/>
+      <img src="https://img.icons8.com/ios/452/tiktok.png" alt="TikTok Logo"/>
+    </a>
+    <a href="https://discord.gg/FYnPa43Wtd" target="_blank" title="Discord">
+      <img src="https://img.icons8.com/ios/452/discord.png" alt="Discord Logo"/>
+    </a>
+    <a href="https://www.twitch.tv/colefam_bowls" target="_blank" title="Twitch">
+      <img src="https://img.icons8.com/ios/452/twitch.png" alt="Twitch Logo"/>
+    </a>
+    <a href="https://www.facebook.com/teamarrowsbowl" target="_blank" title="Facebook">
+      <img src="https://img.icons8.com/ios/452/facebook.png" alt="Facebook Logo"/>
     </a>
   </div>
 
-  <!-- Internal Website Section-->
+  <!-- Internal Website Section -->
   <div class="external-links">
     <p><strong>Links:</strong></p>
-    <a href="./">Home</a>
+    <a href="../">Home</a>
     <a href="videos">Videos</a>
     <a href="about">About</a>
     <a href="contact">Contact</a>
-
   </div>
+
   <!-- External Websites Section -->
   <div class="external-links">
     <p><strong>External Links:</strong></p>
@@ -201,7 +215,7 @@
     <a href="https://scores.arrowsbowl.xyz" target="_blank">Tournament Scores</a>
     <a href="https://bio.arrowsbowl.xyz" target="_blank">Bio</a>
     <a href="https://www.jayjay-adventures.net" target="_blank">JJ's Website</a>
-    <a href="https://aaroncole.dev" target="_blank">Pesonal Website</a>
+    <a href="https://aaroncole.dev" target="_blank">Personal Website</a>
   </div>
 
 </body>
