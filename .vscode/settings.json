@@ -1,0 +1,6 @@
+{
+    "fiveServer.host": "localhost",
+    "fiveServer.port": 10000,
+    "fiveServer.openBrowser": false,
+    "fiveServer.openBrowserPath": "/index.html",
+}
