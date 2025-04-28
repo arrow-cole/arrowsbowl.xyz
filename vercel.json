@@ -1,12 +1,12 @@
 {
     "rewrites": [
-      { "source": "/about", "destination": "/about.html" },
-      { "source": "/contact", "destination": "/contact.html" },
-      { "source": "/high-score", "destination": "/high-score.html" },
-      { "source": "/live", "destination": "/live.html" },
-      { "source": "/products", "destination": "/products.html" },
-      { "source": "/sitemap", "destination": "/sitemap.html" },
-      { "source": "/videos", "destination": "/videos.html" }
+      { "source": "/about", "destination": "/pages/about.html" },
+      { "source": "/contact", "destination": "/pages/contact.html" },
+      { "source": "/high-score", "destination": "/pages/high-score.html" },
+      { "source": "/live", "destination": "/pages/live.html" },
+      { "source": "/products", "destination": "/pages/products.html" },
+      { "source": "/sitemap", "destination": "/pages/sitemap.html" },
+      { "source": "/videos", "destination": "/pages/videos.html" }
     ]
   }
   
