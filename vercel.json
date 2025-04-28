@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+      { "source": "/about", "destination": "/about.html" },
+      { "source": "/contact", "destination": "/contact.html" },
+      { "source": "/high-score", "destination": "/high-score.html" },
+      { "source": "/live", "destination": "/live.html" },
+      { "source": "/products", "destination": "/products.html" },
+      { "source": "/sitemap", "destination": "/sitemap.html" },
+      { "source": "/videos", "destination": "/videos.html" }
+    ]
+  }
+  
