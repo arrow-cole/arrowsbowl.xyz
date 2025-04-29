@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Embed Extractor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>YouTube Embed Link Extractor</h2>
+  <p>Paste the YouTube iframe code below:</p>
+  <textarea id="iframeInput" placeholder='<iframe ...></iframe>'></textarea>
+  <button onclick="extractLink()">Extract Embed Link</button>
+
+  <h3>Embed Link:</h3>
+  <input type="text" id="embedLink" readonly>
+
+  <script>
+    function extractLink() {
+      const input = document.getElementById('iframeInput').value;
+      const match = input.match(/src=["']([^"']+)["']/);
+      const link = match ? match[1] : 'Invalid iframe';
+      document.getElementById('embedLink').value = link;
+    }
+  </script>
+
+</body>
+</html>
