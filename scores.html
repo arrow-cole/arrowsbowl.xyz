@@ -181,79 +181,64 @@
     </div>
   </div>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <h1>Bowling. Vibes. Repeat.</h1>
-    <p>Welcome to the official home of Arrows Bowl — Bowler, content creator, and your go-to for all things lanes, laughs, and lifestyle.</p>
-    <div class="hero-buttons">
-      <a href="pages/videos">Watch Latest</a>
-      <a href="pages/live">Watch Live (WHEN Live!!)</a>
-<!--      <a href="https://shop.mybowlingapparel.com" target="_blank">Shop Merch</a> -->
-    </div>
-  </div>
-
-  <!-- Jr Gold Section -->
-<div class="content-section" id="jr-gold">
-  <h2>2025 Junior Gold Championships</h2>
-  <p>
-    I'm proud to announce that I will be competing in the 2025 Junior Gold Championships, 
-    a prestigious national tournament for youth bowlers, taking place in Green Bay, Wisconsin.
-  </p>
-  <p>
-    Follow my journey and stay up to date with the latest highlights and behind-the-scenes content 
-    through my social media channels.
-  </p>
-  <p>
-    <strong>Watch the action live:</strong> 
-    <a href="jr-gold" rel="noopener noreferrer">Click here to view the live stream</a>.
-    <br />
-    <strong>Check out the schedule:</strong>
-    <a href="schedule" rel="noopener noreferrer">Click here to view the schedule</a>.
-    <br />
-    <strong>Scores For the Tournament:</strong>
-    <a href="scores" rel="noopener noreferrer">Click here to view the scores</a>.
-  </p>
+<div class="content-section" id="bowling-scores">
+  <h2 style="color:#66fcf1;">📊 Tournament Scores</h2>
+  <p style="color:#c5c6c7;">Here are my results over 4 days (4 games each):</p>
+  <div id="score-results" style="margin-top: 30px;"></div>
 </div>
 
+<script>
+  // 🎳 EDIT YOUR SCORES HERE
+  // Replace the empty arrays with your actual scores for each day
+  // Each array should contain 4 scores for the 4 games played on that day
+  // Make sure to keep the numbers apart with commas
+  // Example: day1: [200, 180, 220, 190]
+  const scores = {
+    day1: [ ],
+    day2: [],
+    day3: [],
+    day4: []
+  };
 
+  const baseScore = 200;
+  const resultsContainer = document.getElementById('score-results');
 
-  <!--Bowling Leagues Section-->
-  <div class="content-section" id="bowling">
-    <h2>2024/25 Bowling Season</h2>
-    <br />
-    <p>High School Bowling Season</p>
-    <br />
-    <p>Jr Gold Season (Made Jr gold, so I get to go to Green Bay, WI in July.)</p>
-    <br />
-    <p>MJMA Season</p>
-    <br />
-    <p>Scratch Series Bowling Season</p>
-  </div>
+  let totalAll = 0;
+  let totalGames = 0;
+  let totalPlusMinus = 0;
 
-  <!-- Videos Section -->
-  <div class="content-section" id="videos">
-    <h2>🔥 Latest Videos</h2>
-    <p>Tips, trick shots, gear reviews & behind-the-scenes lane life. Hit that sub button and roll with the crew.</p>
-    <div class="social-links">
-      <a href="https://www.youtube.com/@teamarrowsbowl">YouTube</a>
-      <a href="https://www.tiktok.com/@arrow_cole">TikTok</a>
-      <a href="https://www.instagram.com/acole_bowl">Instagram</a>
+  Object.entries(scores).forEach(([day, games], index) => {
+    const total = games.reduce((a, b) => a + b, 0);
+    const avg = total / games.length;
+    const plusMinus = games.reduce((sum, score) => sum + (score - baseScore), 0);
+
+    totalAll += total;
+    totalGames += games.length;
+    totalPlusMinus += plusMinus;
+
+    resultsContainer.innerHTML += `
+      <div style="margin-bottom: 20px;">
+        <h3 style="color: #66fcf1;">Day ${index + 1}</h3>
+        <p style="color: #c5c6c7;">Scores: ${games.join(", ")}</p>
+        <p style="color: #c5c6c7;">Average: ${avg.toFixed(2)}</p>
+        <p style="color: #c5c6c7;">+/- from 200: ${plusMinus > 0 ? "+" : ""}${plusMinus}</p>
+      </div>
+    `;
+  });
+
+  const overallAverage = totalAll / totalGames;
+
+  resultsContainer.innerHTML += `
+    <hr style="border: 1px solid #66fcf1; margin: 40px 0;">
+    <div style="margin-top: 20px;">
+      <h3 style="color: #66fcf1;">🎯 Total Performance</h3>
+      <p style="color: #c5c6c7;">Total Games: ${totalGames}</p>
+      <p style="color: #c5c6c7;">Overall Average: ${overallAverage.toFixed(2)}</p>
+      <p style="color: #c5c6c7;">Total +/- from 200: ${totalPlusMinus > 0 ? "+" : ""}${totalPlusMinus}</p>
     </div>
-  </div>
+  `;
+</script>
 
-  <!-- About Section -->
-  <div class="content-section" id="about">
-    <h2>🎳 Meet Arrow</h2>
-    <p>From junior leagues to viral videos, I’ve been throwing strikes since I could lift a ball. Let’s build the biggest bowling fam online.</p>
-  </div>
-
-  <!-- Merch Section -->
-   <div class="content-section" id="merch">
-    <h2>🧢 Official Merch</h2>
-    <p>Coming Soon</p>
-    <!-- <p>Rep the lane life with tees, hoodies, and exclusive drops — made for bowlers, by a bowler.</p>
-    <a class="hero-buttons" href="https://shop.mybowlingapparel.com" target="_blank">Shop Now</a> -->
-  </div>
 
   <!-- Footer -->
   <footer id="contact">
