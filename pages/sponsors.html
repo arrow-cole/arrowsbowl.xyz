@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | ArrowsBowl</title>
+  <title>Sponsors | ArrowsBowl</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/favicon.png" type="image/x-icon"> <!-- Favicon Link -->
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
  <style>
     body {
       margin: 0;
@@ -80,28 +80,67 @@
       display: block;
     }
 
-    .contact-section {
+    .sponsors-section {
       padding: 60px 20px;
-      max-width: 800px;
+      max-width: 1200px;
       margin: auto;
       text-align: center;
     }
 
-    .contact-section h1 {
+    .sponsors-section h1 {
       font-size: 3em;
       color: #66fcf1;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
-    .contact-section p {
-      font-size: 1.2em;
+    /* Dynamic grid layout for sponsors */
+    .sponsor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .sponsor {
+      padding: 20px;
+      background-color: #1f2833;
+      border-radius: 10px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .sponsor img {
+      max-width: 150px;
+      max-height: 100px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .sponsor img:hover {
+      transform: scale(1.05);
+    }
+
+    .sponsor h2 {
+      font-size: 1.5em;
+      color: #66fcf1;
+      margin-bottom: 10px;
+    }
+
+    .sponsor p {
+      font-size: 1em;
       color: #c5c6c7;
-      line-height: 1.6;
+      line-height: 1.5;
+      margin-bottom: 5px;
     }
 
-    .contact-section a {
+    .sponsor a {
       color: #66fcf1;
       text-decoration: underline;
+      font-weight: 600;
     }
 
     footer {
@@ -123,7 +162,7 @@
 </head>
 <body>
 
-<!-- Navbar -->
+  <!-- Navbar -->
   <div class="navbar">
     <a class="logo" href="../">ArrowsBowl</a>
     <div class="nav-links">
@@ -142,28 +181,43 @@
       </div>
     </div>
   </div>
-  <!-- Contact Section -->
-  <div class="contact-section">
-    <h1>📩 Get in Touch</h1>
-    <p>
-      Got a brand deal, event invite, or just want to say hey? I’m all ears (and eyes).
-    </p>
-    <p>
-      💼 For business inquiries:<br>
-      <a href="mailto:Acole@tech-center.com">Acole@tech-center.com</a>
-    </p>
-    <p>
-      📞 Text me:<br>
-      <a href="tel:+16167101453">+1 (616) 710-1453</a>
-    </p>
-    <p>
-      📬 Or DM me on Instagram:<br>
-      <a href="https://www.instagram.com/acole_bowl/" target="_blank">@Acole_Bowl</a>
-    </p>
+
+  <!-- Sponsors Section -->
+  <div class="sponsors-section">
+    <h1>🤝 Our Sponsors</h1>
+
+    <div class="sponsor-grid">
+      <!-- Sponsor 1 -->
+      <div class="sponsor">
+        <img src="../images/ctd-bowling.png" alt="CTD Bowling Logo">
+        <h2>CTD Bowling</h2>
+        <p>Your go-to for all things bowling! Premium gear and unbeatable community events.</p>
+        <p>Website: <a href="https://ctdbowling.com" target="_blank">ctdbowling.com</a></p>
+      </div>
+
+      <!-- Sponsor 2 -->
+      <div class="sponsor">
+        <img src="../images/devious-bowling.png" alt="Devious Bowling Logo">
+        <h2>Devious Bowling</h2>
+        <p>Revolutionizing the way you bowl. Check out their latest products and events.</p>
+        <p>Website: <a href="https://deviousbowling.com" target="_blank">deviousbowling.com</a></p>
+      </div>
+
+      <!-- Sponsor 3 -->
+      <div class="sponsor">
+        <img src="../images/throw-more-strikes.png" alt="Throw More Strikes Logo" style="background:white;">
+        <h2>Throw More Strikes</h2>
+        <p>Learn to dominate the lanes and improve your game with expert tips and gear.</p>
+        <p>Website: <a href="https://store.throwmorestrikes.com" target="_blank">throwmorestrikes.com</a></p>
+        <p>Discount Code: <strong>Cole10</strong> for 10% off!</p>
+      </div>
+
+      <!-- Add more sponsors here, and the grid will automatically adjust -->
+    </div>
   </div>
 
   <footer>
-    © 2025 Arrows Bowl — Slide into the DMs.
+    © 2025 Arrows Bowl — Proudly supported by our sponsors.
   </footer>
 
 </body>
